@@ -10,9 +10,9 @@ public class Main {
 
             // 양의 정수2개 입력하기
             System.out.println("첫 번째 숫자를 입력하세요");
-            double num1 = sc.nextInt();
+            int num1 = sc.nextInt();
             System.out.println("두 번째 숫자를 입력하세요");
-            double num2 = sc.nextInt();
+            int num2 = sc.nextInt();
 
 
             // 사칙연산 기호 입력 받기
@@ -36,7 +36,7 @@ public class Main {
                     break;
                 case "/":
                     if (num2 != 0) {
-                        result = num1 / num2;
+                        result = (double)num1 / num2;
                     } else {
                         System.out.println("오류: 0으로 나눌 수 없습니다.");
                         isValid = false; // 연산이 유효하지 않음을 표시
