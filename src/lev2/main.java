@@ -1,5 +1,6 @@
 package lev2;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class main {
@@ -20,7 +21,11 @@ public class main {
             System.out.println("결과: " + result);
 
             System.out.println("지금까지의 결과값:");
-            calculator.getList();
+            List<Double> results = calculator.getList();
+            for(double process : results){
+            System.out.println(process);
+            }
+
 
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
             sc.nextLine();
