@@ -39,12 +39,12 @@ public class Main {
                         result = (double)num1 / num2;
                     } else {
                         System.out.println("오류: 0으로 나눌 수 없습니다.");
-                        isValid = false; // 연산이 유효하지 않음을 표시
+//                        isValid = false; // 연산이 유효하지 않음을 표시
                     }
                     break;
                 default:
                     System.out.println("오류: 잘못된 연산자입니다.");
-                    isValid = false; // 유효하지 않은 연산자일 경우
+//                    isValid = false; // 유효하지 않은 연산자일 경우
             }
 
             // 연산이 유효한 경우에만 결과 출력
